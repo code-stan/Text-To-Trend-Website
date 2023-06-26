@@ -237,7 +237,7 @@ button{
     font-weight: 700;
 }
 .landing-page{
-    padding-top: clamp(var(--sub-content-spacing), 8vw, 7rem);
+    padding-top: 15vh;
     text-align: center;
 }
 .lp-header{

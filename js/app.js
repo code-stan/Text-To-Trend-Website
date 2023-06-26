@@ -18,7 +18,7 @@ menu.addEventListener("click", ()=>{
 
 })
 window.addEventListener("scroll", ()=>{
-    if(window.scrollY > 100){
+    if(window.scrollY > 50){
         logo.classList.add("onmove")
         navbar.classList.add("onmove")
         menu.classList.add("onmove")
