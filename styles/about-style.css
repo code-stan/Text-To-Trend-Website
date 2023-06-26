@@ -3,7 +3,7 @@ h2{
 }
 
 .about-section{
-    margin-top: var(--sub-content-spacing, 10rem);
+    margin-top: 25vh;
 }
 .landing-page-section{
     padding-bottom: 0rem;
