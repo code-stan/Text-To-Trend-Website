@@ -81,12 +81,15 @@ button{
     position: fixed;
     z-index: 1001;
     top: 2rem;
-    right: 4rem;    
+    right: 2rem; 
     display: flex;
     flex-direction: column;
     row-gap: .4rem;
     background-color: transparent;
     padding: 1rem;
+}
+.menu.onmove{
+    top: 1.2rem;
 }
 .icon{
     width: 4.5rem;
@@ -203,6 +206,18 @@ button{
 
 .navbar{
     padding: 2rem 1.5rem;
+    background-color: var(--landing-page-background);
+    position: fixed;
+    z-index: 1001;
+    inset: 0 0 auto;
+    transition: .4s;
+}
+.navbar.onmenu{
+    position: static;
+}
+.navbar.onmove{
+    padding: 1.5rem 2rem;
+    box-shadow: 0 .3rem 1.2rem rgba(0, 0, 0, .1);
 }
 .navbar-list{
     display: flex;
@@ -212,13 +227,17 @@ button{
 .logo{
     font-size: clamp(1.6rem, 8vw, 2rem);
     font-weight: 600;
+    transition: .4s;
+}
+.logo.onmove{
+    font-size: 1.6rem;
 }
 .logo span{
     color: var(--accent-color);
     font-weight: 700;
 }
 .landing-page{
-    margin-top: clamp(var(--sub-content-spacing), 8vw, 7rem);
+    padding-top: clamp(var(--sub-content-spacing), 8vw, 7rem);
     text-align: center;
 }
 .lp-header{
