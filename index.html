@@ -8,10 +8,22 @@
       content="
     'Text to Trend' is a versatile brand that bridges the gap between the written word and social media trends. With a core focus on book editing and social media blogging, 'Text to Trend' offers a comprehensive range of services for authors and content creators alike."
     />
+    <link rel="stylesheet" href="./styles/loader-style.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Text to Trend | Homepage</title>
   </head>
-  <body>
+  <body class="loading">
+    <!-- LOADER SECTION -->
+    <section class="loader-loader">
+      <div class="loader-icon-container">
+        <div class="l-i-1 loader-icon"></div>
+        <div class="l-i-2 loader-icon"></div>
+        <div class="l-i-3 loader-icon"></div>
+      </div>
+     <div class="loader-brand-name">
+      TEXT TO TREND
+     </div>
+    </section>
     <!-- HEADER SECTION -->
     <section class="landing-page-section section">
       <header class="header-section">
@@ -30,9 +42,11 @@
           <ul class="menu-list">
             <li class="menu-list-item">
               <a href="/" class="menu-link"><span>01.</span>Home</a>
+              <div class="hover-link"></div>
             </li>
             <li class="menu-list-item">
               <a href="/subpage/about.html" class="menu-link"><span>02.</span>About</a>
+              <div class="hover-link"></div>
             </li>
           </ul>
           <div class="menu-effect">
@@ -141,7 +155,7 @@
       <div class="footer-list-container">
         <ul class="footer-list">
           <li class="footer-list-item">
-            <a href="./subpage/about.html" class="footer-link">About</a>
+            <a href="./pages/about.html" class="footer-link">About</a>
           </li>
           <li class="footer-list-item">
             <a href="#" class="footer-link">Back to Top</a>

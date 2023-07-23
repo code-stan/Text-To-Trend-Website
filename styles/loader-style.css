@@ -1,0 +1,54 @@
+:root{
+    --loader-color:#eeeeee;
+}
+body.loading > *:not(.loader-loader){
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+}
+.loader-loader{
+    position: fixed;
+    background-color: var(--accent-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loader-loader.loaded{
+    display: none;
+}
+.loader-icon-container{
+    display: flex;
+    animation: rotate-Anim 2s infinite ease-in;
+}
+.loader-icon{
+    border: .4rem solid var(--loader-color);
+    padding: 1rem;
+    border-radius: 50%;
+}
+@keyframes rotate-Anim {
+    0%{
+        gap: 0;
+    }
+    50%{
+        rotate: z 360deg;
+    }
+    75%{
+        gap: 1rem;
+        rotate: z 360deg;
+    }
+    100%{
+        gap: 0;
+    }
+}
+
+.loader-brand-name{
+    margin-top: 4rem;
+    font-size: 2.4rem;
+    color: var(--black);
+    opacity: .9;
+    font-weight: 700;
+}
+/* body. */

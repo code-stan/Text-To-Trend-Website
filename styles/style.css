@@ -33,6 +33,10 @@
     color: var(--black);
     
 }
+*::selection{
+    background-color: #ff5e006d;
+    
+}
 a{
     color: unset;
     text-decoration: none;
@@ -45,6 +49,7 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+
 body{
     overflow-x: hidden;
     font-size: 1.6rem;
@@ -80,22 +85,23 @@ button{
 .menu{
     position: fixed;
     z-index: 1001;
-    top: 2rem;
-    right: 2rem; 
+    top: 3em;
+    right: 8%; 
     display: flex;
     flex-direction: column;
     row-gap: .4rem;
     background-color: transparent;
     padding: 1rem;
+    cursor: pointer;
 }
 .menu.onmove{
-    top: 1.2rem;
+    top: 1.6em;
 }
 .icon{
     width: 4.5rem;
     height: .2rem;
     background-color: var(--black);
-    transition: all .5s ease-in-out;
+    transition: all .3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .icon.open{
     background-color: var(--text-white);
@@ -143,6 +149,17 @@ button{
 }
 .menu-link{
     color: var(--text-white);
+    transition: .2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.hover-link{
+    background-color: var(--form-background);
+    height: .2rem;
+    width: 0;
+    transition: .2s ease-in-out;
+}
+.menu-link:hover + .hover-link{
+    transform-origin: right center;
+    width: 100%;
 }
 .menu-link span{
     color: inherit;
@@ -205,7 +222,7 @@ button{
 }
 
 .navbar{
-    padding: 2rem 1.5rem;
+    padding: 3em 8% 2rem;
     background-color: var(--landing-page-background);
     position: fixed;
     z-index: 1001;
@@ -216,7 +233,7 @@ button{
     position: static;
 }
 .navbar.onmove{
-    padding: 1.5rem 2rem;
+    padding: 1.5em 8%;
     box-shadow: 0 .3rem 1.2rem rgba(0, 0, 0, .1);
 }
 .navbar-list{
@@ -230,14 +247,14 @@ button{
     transition: .4s;
 }
 .logo.onmove{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 .logo span{
     color: var(--accent-color);
     font-weight: 700;
 }
 .landing-page{
-    padding-top: 15vh;
+    padding-top: 20vh;
     text-align: center;
 }
 .lp-header{
