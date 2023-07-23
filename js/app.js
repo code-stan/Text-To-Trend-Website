@@ -15,7 +15,7 @@ function unvail(){
 
 }
 window.addEventListener("load", ()=>{
-    setTimeout(unvail, 2700)
+    setTimeout(unvail, 1800)
 })
 
 menu.addEventListener("click", ()=>{
